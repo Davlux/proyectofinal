@@ -1,0 +1,241 @@
+body {
+    background: #f7f2e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contenedor {
+    position: relative;
+    margin: 50px;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px #0000001a;
+}
+
+.contenedorimg {
+    position: relative;
+    margin: 50px;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 800px;
+    background: #ffffff;
+    box-shadow: 0 35px 55px #0000001a;
+}
+
+/*Estilos enlaces*/
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid #45b0d1;
+}
+
+/* Barra de navegación izquierda */
+section {
+    background: #035169;
+    position: relative;
+    padding: 40px;
+}
+
+.perfil {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #45b0d1;
+}
+
+.perfil .foto {
+    position: relative;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.perfil h2 {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.perfil h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contacto {
+    padding-top: 40px;
+}
+
+.titulo {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contacto ul {
+    position: relative;
+}
+
+.contacto ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.contacto ul li .icono {
+    display: inline-block;
+    width: 30px;
+    font-size: 15px;
+    color: #45b0d1;
+}
+
+.contenedor ul li span {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.educacion {
+    padding-top: 40px;
+}
+
+.educacion li {
+    margin-bottom: 15px;
+}
+
+.educacion h5 {
+    color: #45b0d1;
+    font-weight: 500;
+}
+
+.educacion h4 {
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.educacion ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+/* Cuerpo del CV */
+article {
+    background: #fffefe;
+    position: relative;
+    padding: 40px;
+}
+
+.perfil2 {
+    margin-bottom: 50px;
+}
+
+.titulo2 {
+    color: #035169;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #3b3b3b;
+}
+
+.perfil2 .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.perfil2 .box .tiempo {
+    min-width: 150px;
+}
+
+.perfil2 .box .tiempo h5 {
+    text-transform: uppercase;
+    color: #818c8f;
+    font-weight: 600;
+}
+
+.perfil2 .box .texto h4 {
+    text-transform: uppercase;
+    color: #45b0d1;
+    font-size: 16px;
+}
+
+.habilidades ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.habilidades ul li {
+    list-style: none;
+    margin: 10px;
+    color: #3b3b3b;
+    font-weight: 500;
+}
+
+.habilidades ul li .fa {
+    color: #45b0d1;
+    font-size: 18px;
+    width: 20px;
+}
+
+#btn-scroll-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#btn-scroll-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    color: #45b0d1;
+    padding: 10px;
+    font-size: 24px;
+  }
+  
+  #btn-scroll-up:hover {
+    background-color: #035169;
+    color: #fffefe;
+  }
+  
+/*Diseño web responsivo*/
+@media (max-width: 1000px) {
+    .contenedor {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr)
+    }
+}
+
+@media (max-width: 600px) {
+    .perfil2 .box {
+        flex-direction: column;
+    }
+
+    .perfil2 .box .tiempo h5 {
+        margin-bottom: 2px;
+    }
+
+    .habilidades ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
